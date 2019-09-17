@@ -1,0 +1,21 @@
+rhsa:
+  $type: namespace
+  enabled:
+    $type: boolean
+    $default: False
+  init_delay:
+    $type: number
+    $default: 240
+    $help: The minimum delay before starting initial highstate apply (seconds)
+  init_delay_drift:
+    $type: number
+    $default: 3600
+    $help: The maximum initial delay drift. The random number of seconds will be appended to initial delay in range between 0 and this number.
+  next_delay:
+    $type: number
+    $default: 10080
+    $help: The minimum delay before starting next highstate apply (seconds)
+  next_delay_drift:
+    $type: number
+    $default: 3600
+    $help: The maximum delay drift for next runs. The random number of seconds will be appended to initial delay in range between 0 and this number.
