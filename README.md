@@ -22,7 +22,7 @@ The example file structure should be like this:
 /usr/share/susemanager/formulas/states/frhsa/init.sls
 ```
 
-Put the reactor to salt master configuration for the events *salt/minion/*/start* and *rhsa/run*.
+Put the reactor to salt master configuration for the events `salt/minion/*/start` and `rhsa/run`.
 The example configuration:
 ```
 reactor:
@@ -30,7 +30,6 @@ reactor:
     - /srv/salt/rhsa/init.sls
   - 'rhsa/run':
     - /srv/salt/rhsa/init.sls
-
 ```
 
 ***WARNING: please note, that reactor for salt/minion/*/start could be already set, for example in SUSE Manager configuration
