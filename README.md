@@ -11,6 +11,7 @@ The random drift time of applying highstate should improve performance in large 
 ## Installation
 
 Put **salt/rhsa** directory content to the salt-master server. For example to /srv/salt/rhsa
+
 The example file structure should be like this:
 ```
 /srv/salt/rhsa/
@@ -18,6 +19,7 @@ The example file structure should be like this:
 ```
 
 Put **formulas** directory content to the salt-master server. For example to /usr/share/susemanager/formulas/
+
 The example file structure should be like this:
 ```
 /usr/share/susemanager/formulas/metadata/frhsa
@@ -37,7 +39,7 @@ reactor:
     - /srv/salt/rhsa/init.sls
 ```
 
-***WARNING: please note, that reactor for `salt/minion/*/start` could be already set, for example in SUSE Manager configuration
+***WARNING: please note, that reactor for `salt/minion/*/start` could be already set, for example in **SUSE Manager** configuration.
 Use the following example as a reference for such case:***
 ```
 reactor:
