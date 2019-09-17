@@ -68,10 +68,10 @@ rhsa:
 The configuration can be applied with forms and formulas also.
 Attach formula to a group or a system:
 ### Formulas
-![](https://github.com/vzhestkov/salt-rhsa/raw/master/screenshots/formulas.png)
+![](screenshots/formulas.png)
 
 ### Configuring formula
-![](https://github.com/vzhestkov/salt-rhsa/raw/master/screenshots/formula-config.png)
+![](screenshots/formula-config.png)
 
 ### Configuration variables
 **enabled** - turns the state ON or OFF. If set to ON, the highstate will be applied according the time configured.
