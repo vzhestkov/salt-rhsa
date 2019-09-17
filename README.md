@@ -74,18 +74,19 @@ Attach formula to a group or a system:
 ![](https://github.com/vzhestkov/salt-rhsa/raw/master/screenshots/formula-config.png)
 
 ### Configuration variables
-*enabled* - turns the state ON or OFF. If set to ON, the highstate will be applied according the time configured.
+**enabled** - turns the state ON or OFF. If set to ON, the highstate will be applied according the time configured.
 
-*init_delay* - sets the initial delay on starting minion event. The value defines the delay after start the highstate will be applied for the first time.
+**init_delay** - sets the initial delay on starting minion event. The value defines the delay after start the highstate will be applied for the first time.
 This time of the delay is also depends on *init_delay_drift*.
 
-*init_delay_drift* - sets the maximum time in seconds of random addition to the *init_delay_time*
+**init_delay_drift** - sets the maximum time in seconds of random addition to the **init_delay_time**
 
-*next_delay* - sets the delay for the each next highstate apply. The value defines the delay to the next highstate apply.
+**next_delay** - sets the delay for the each next highstate apply. The value defines the delay to the next highstate apply.
 This time of the delay is also depends on *next_delay_drift*.
 
-*next_delay_drift* - sets the maximum time in seconds of random addition to the *next_delay_time*
+**next_delay_drift** - sets the maximum time in seconds of random addition to the **next_delay_time**
 
 In general it means that the highstate will be applied in `init_delay+random(init_delay_drift)` after minion starts.
 The next highstate apply will be scheduled after `next_delay+random(next_delay_drift)` seconds.
+
 ***WARNING: Please refrain of using low init_delay and next_delay values. Such configuration values are your own risk and could influence on whole of the environment.***
