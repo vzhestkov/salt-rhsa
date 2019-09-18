@@ -22,11 +22,11 @@ Put **formulas** directory content to the salt-master server. For example to /us
 
 The example file structure should be like this:
 ```
-/usr/share/susemanager/formulas/metadata/frhsa
-/usr/share/susemanager/formulas/metadata/frhsa/form.yml
-/usr/share/susemanager/formulas/metadata/frhsa/metadata.yml
-/usr/share/susemanager/formulas/states/frhsa
-/usr/share/susemanager/formulas/states/frhsa/init.sls
+/usr/share/susemanager/formulas/metadata/recurrent-highstate-applier
+/usr/share/susemanager/formulas/metadata/recurrent-highstate-applier/form.yml
+/usr/share/susemanager/formulas/metadata/recurrent-highstate-applier/metadata.yml
+/usr/share/susemanager/formulas/states/recurrent-highstate-applier
+/usr/share/susemanager/formulas/states/recurrent-highstate-applier/init.sls
 ```
 
 Put the reactor to salt master configuration for the events `salt/minion/*/start` and `rhsa/run`.
